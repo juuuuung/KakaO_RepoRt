@@ -4,7 +4,7 @@ package problems;
 public class Key_noneKey {
 
 	public static void main(String[] args) {
-		String k = "b1";
+		String k = "b6";
 		String M = "HELLO WORLD";
 		int[] array_string = new int[M.length()];
 		char[] just_string = new char[array_string.length];
@@ -12,11 +12,12 @@ public class Key_noneKey {
 
 		array_string = encryption(M, int_k);
 		for (int i = 0; i < array_string.length; i++) {
-			System.out.println((char) array_string[i]);
+			System.out.printf("%c", (char) array_string[i]);
 		}
 
 		just_string = decryption(array_string, int_k);
-		for(int i = 0; i < just_string.length; i++) {
+		System.out.println("\n");
+		for (int i = 0; i < just_string.length; i++) {
 			System.out.printf("%c", just_string[i]);
 		}
 	}
